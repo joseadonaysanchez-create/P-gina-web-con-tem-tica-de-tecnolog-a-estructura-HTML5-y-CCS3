@@ -1,0 +1,104 @@
+/* Variables de color */
+:root {
+    --primary-color: #00d4ff;
+    --dark-color: #0a0b10;
+    --text-light: #f4f4f4;
+    --accent-color: #005f73;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background: var(--dark-color);
+    color: white;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.logo span {
+    color: var(--primary-color);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--primary-color);
+}
+
+
+.banner {
+    height: 60vh;
+    background: linear-gradient(rgba(10, 11, 16, 0.8), rgba(10, 11, 16, 0.8)),
+        url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1000&q=80');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.boton {
+    margin-top: 20px;
+    padding: 10px 30px;
+    background: var(--primary-color);
+    color: var(--dark-color);
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+
+.container {
+    padding: 4rem 5%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-top: 4px solid var(--primary-color);
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    background: #000;
+    color: #777;
+    font-size: 0.9rem;
+}
